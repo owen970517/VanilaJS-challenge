@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.hidden {
+    display: none;
+}
+
+#bgImage{
+    position:absolute;
+    left:0;
+    top:0;
+	max-width:100%;
+    max-height: 1175px;
+    z-index:-5;
+    filter: brightness(30%);
+}
+
+
+#login-form{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-align: center;
+    font-size: 20px;
+    opacity: 60%;
+    font-family: 'Roboto';
+}
+
+#login-form input {
+    text-align: center;
+    color:white;
+    font-size:1rem;
+    width: 300px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.1);
+    font-weight: 100;
+    border:none;
+    margin-top:-50px;
+    transition: all, 0.4s;
+
+}
+#login-form input:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+#login-form input:hover::-webkit-input-placeholder{ /*placeholder color change*/
+    color: #fff;
+}
+
+#login-form input:focus {
+    outline: none;
+    color: #fff;
+    background-color:rgba(0,0,0,0);
+    border-bottom: 1px solid white ;
+}
+
+.login-btn {
+    width : 100px;
+    height : 50px;
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; 
+    background: white;
+
+}
+
+.login-btn:hover {
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; 
+    background: black;
+    color: white;
+
+}
+
+#todo-form{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-align: center;
+    margin-top:0px;
+    
+}
+#todo-form input{
+    text-align: center;
+    color:white;
+    font-size:1rem;
+    width: 540px;
+    height:40px;
+    background-color: rgba(255,255,255,0.1);
+    font-weight: 500;
+    border:none;
+    margin-bottom:20px;
+    margin-top:-30px;
+    transition: all, 0.4s;
+}
+    #todo-form input:hover{
+        background-color: rgba(255,255,255,0.4);
+    }
+    #todo-form input:hover::-webkit-input-placeholder{ 
+        color: #fff;
+    }
+    #todo-form input:focus{
+        outline:none;
+        border-bottom: 1px solid white;
+        background-color:rgba(0,0,0,0);
+    }
+
+#todo-list{
+    overflow-y: scroll;
+    margin-top: 450px;
+    text-align: center;
+    height: 400px;
+    }
+    #todo-list::-webkit-scrollbar {
+        width: 10px;
+      }
+      #todo-list::-webkit-scrollbar-thumb {
+        background-color: #2f3542;
+        border-radius: 10px;
+        background-clip: padding-box;
+        border: 2px solid transparent;
+      }
+      #todo-list::-webkit-scrollbar-track {
+        background-color: grey;
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 5px white;
+      }
+    #todo-list li{
+        list-style: none;
+        color:rgba(250,250,250,0.8);
+        margin-top:20px;
+        margin-bottom:50px;
+        font-size:1.5rem;
+        width:540px;
+        margin: 0 auto;
+        }
+    #todo-list button{
+        margin-left:10px;
+        background-color:rgba(255,255,255,0);
+        outline: none;
+        color:white;
+        font-weight: 700;
+        width:30px;
+        height:30px;
+        border:none;
+        font-size:1.2rem;
+        }
+    #todo-list button:hover{
+        color: red;
+        cursor: pointer;
+    }
+
+#greeting{
+    font-family: 'Roboto';
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    opacity: 60%;
+}
+
+.clock-font{
+    font-family: 'ubuntu';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-align: center;
+    font-size: 90px;
+    color: #fff;
+    opacity: 60%;
+}
+
+
+.quote-font {   
+    font-family: 'Roboto';
+    position: relative;
+    bottom: 10px;
+    z-index: 2;
+    text-align: center;
+    color: whitesmoke;
+    opacity: 60%;
+} 
+
+.quote-font span:nth-child(1) {
+    font-size: 35px;
+}
+.quote-font span:nth-child(2) {
+    font-size: 20px;
+}
+
+.weather-font{
+    font-family: 'Roboto';
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-align: center;
+    font-size: 20px;
+    color: whitesmoke;
+    opacity: 60%;
+}
+
