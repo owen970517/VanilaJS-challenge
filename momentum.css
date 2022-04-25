@@ -196,20 +196,26 @@
 
 
 .quote-font {   
+    height:auto;
+    min-height: 100%;
+} 
+.quotes{
     font-family: 'Roboto';
     position: relative;
-    bottom: 10px;
+    transform: translateY(-20%);
     z-index: 2;
     text-align: center;
-    color: whitesmoke;
+    color: #fff;
     opacity: 60%;
-} 
-
-.quote-font span:nth-child(1) {
-    font-size: 35px;
 }
-.quote-font span:nth-child(2) {
+
+.quotes span:nth-child(1) {
+    font-size: 35px;
+    
+}
+.quotes span:nth-child(2) {
     font-size: 20px;
+    
 }
 
 .weather-font{
